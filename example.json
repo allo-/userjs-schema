@@ -1,0 +1,34 @@
+{
+  "profile": "pyllyukko/user.js (paranoid)",
+  "prefs": {
+    "dom.event.clipboardevents.enabled": {
+      "category": "HTML5 / APIs / DOM",
+      "type": "boolean",
+      "description": "Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript",
+      "active_when": "false",
+      "default": "false",
+      "warnings": [
+        "Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)"
+        ],
+      "references": [
+        "https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled"
+        ]
+    },
+    "network.http.referer.spoofSource": {
+      "category": "HTTP",
+      "type": "boolean",
+      "description": "Send a referer header with the target URI as the source",
+      "active_when": "true",
+      "default": "true",
+      "warnings": [
+        "Spoofing referers breaks functionality on websites relying on authentic referer headers",
+        "Spoofing referers breaks visualisation of 3rd-party sites on the Lightbeam addon",
+        "Spoofing referers disables CSRF protection on some login pages not implementing origin-header/cookie+token based CSRF protection"
+        ],
+      "references": [
+        "https://bugzilla.mozilla.org/show_bug.cgi?id=822869",
+        "https://github.com/pyllyukko/user.js/issues/227"
+        ]
+    },
+  },
+}
