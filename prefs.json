@@ -35,7 +35,7 @@
       "categories": [ "disk-caching", "performance" ],
       "type": "integer_input",
       "description": "Disable the disk cache to reduce browsing data on your pc",
-      "setting": "browser.cache.disk.capacity"
+      "setting": "browser.cache.disk.capacity",
       "default": null,
       "warnings": [
         "This will slow down your browsing and increase the amount of transferred data.",
@@ -49,7 +49,7 @@
       "type": "string_input",
       "description": "Change your useragent string. If you keep the field empty, no setting will be changed.",
       "setting": "general.useragent.override",
-      "default": null
+      "default": null,
       "warnings": [
         "If you're faking a non-mozilla UA some sites may break, because they are sending content adapted to the wrong browser.",
       ],
