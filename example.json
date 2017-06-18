@@ -11,7 +11,8 @@
         "Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)"
         ],
       "references": [
-        "https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled"
+        ("https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled",
+         'Mozilla Documentation for the clipboardevents setting")
         ]
     },
     "network.http.referer.spoofSource": {
@@ -26,8 +27,8 @@
         "Spoofing referers disables CSRF protection on some login pages not implementing origin-header/cookie+token based CSRF protection"
         ],
       "references": [
-        "https://bugzilla.mozilla.org/show_bug.cgi?id=822869",
-        "https://github.com/pyllyukko/user.js/issues/227"
+        ("https://bugzilla.mozilla.org/show_bug.cgi?id=822869", "Bugzilla Entry"),
+        ("https://github.com/pyllyukko/user.js/issues/227", "Project Issue on Github")
         ]
     },
   },
