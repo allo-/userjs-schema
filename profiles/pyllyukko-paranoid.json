@@ -1,11 +1,12 @@
 {
   "profile": "pyllyukko/user.js (paranoid)",
+  "toc": [ "data-leak", "tracking", "disk-caching", "performance" ],
   "prefs": {
     "dom.event.clipboardevents.enabled": {
-      "category": "HTML5 / APIs / DOM",
+      "categories": [ "html5-api-dom", "data-leak" ],
       "type": "boolean",
       "description": "Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript",
-      "active_when": "false",
+      "value_when_active": "false",
       "default": "false",
       "warnings": [
         "Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)"
@@ -15,10 +16,10 @@
       ]
     },
     "network.http.referer.spoofSource": {
-      "category": "HTTP",
+      "categories": [ "http", "tracking" ],
       "type": "boolean",
       "description": "Send a referer header with the target URI as the source",
-      "active_when": "true",
+      "value_when_active": "true",
       "default": "true",
       "warnings": [
         "Spoofing referers breaks functionality on websites relying on authentic referer headers",
@@ -31,7 +32,7 @@
       ]
     },
     "browser.cache.disk.capacity": {
-      "category": "Disk",
+      "categories": [ "disk-caching", "performance" ]
       "type": "integer",
       "description": "Disable the disk cache to reduce browsing data on your pc",
       "value_when_active": 0,
@@ -44,7 +45,7 @@
       ]
     },
     "general.useragent.override": {
-      "category": "Identification",
+      "categories": [ "tracking", "category3" ],
       "type": "integer",
       "description": "Change your useragent string",
       "value_when_active": "USERINPUT",
