@@ -11,8 +11,7 @@
         "Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)"
         ],
       "references": [
-        ("https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled",
-         "Mozilla Documentation for the clipboardevents setting")
+        ("https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled", "Mozilla Documentation for the clipboardevents setting")
         ]
     },
     "network.http.referer.spoofSource": {
