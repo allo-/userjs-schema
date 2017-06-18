@@ -1,6 +1,9 @@
 {
   "profile": "pyllyukko/user.js (paranoid)",
-  "toc": [ "data-leak", "tracking", "disk-caching", "performance" ],
+  "toc": {
+    "basic": [ "data-leak", "tracking", "disk-caching"],
+    "expert": [ "data-leak", "tracking", "disk-caching", "html5-api-dom", "http", "performance", "category3" ]
+  },
   "prefs": {
     "dom.event.clipboardevents.enabled": {
       "categories": [ "html5-api-dom", "data-leak" ],
