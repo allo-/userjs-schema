@@ -1,0 +1,6 @@
+{
+  "data-leak": { "title": "Prevent data leaks" },
+  "tracking": { "title": "Prevent tracking" },
+  "disk-caching": { "title": "Prevent persistent disk storage" },
+  "performance": { "title": "Settings that affect performance" },
+}
