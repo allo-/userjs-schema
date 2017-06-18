@@ -43,5 +43,18 @@
         [ "https://someurl", "Documentation" ],
       ]
     },
+    "useragent": {
+      "category": "Identification",
+      "type": "integer",
+      "description": "Change your useragent string",
+      "value_when_active": "USERINPUT",
+      "default": null,
+      "warnings": [
+        "If you're faking a non-mozilla UA some sites may break, because they are sending content adapted to the wrong browser.",
+      ],
+      "references": [
+        [ "https://someurl", "Documentation" ],
+      ]
+    }
   },
 }
