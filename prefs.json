@@ -2,11 +2,11 @@
   "prefs": {
     "clipboardevents": {
       "categories": [ "html5-api-dom", "data-leak" ],
-      "type": "boolean",
+      "type": "checkbox",
       "description": "Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript",
-      "settings": {
+      "settings": [
           "dom.event.clipboardevents.enabled": false
-      },
+      ],
       "warnings": [
         "Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)"
       ],
@@ -16,11 +16,11 @@
     },
     "referer_spoof_source": {
       "categories": [ "http", "tracking" ],
-      "type": "boolean",
+      "type": "checkbox",
       "description": "Send a referer header with the target URI as the source",
-      "settings": {
+      "settings": [
           "network.http.referer.spoofSource": true
-      },
+      ],
       "warnings": [
         "Spoofing referers breaks functionality on websites relying on authentic referer headers",
         "Spoofing referers breaks visualisation of 3rd-party sites on the Lightbeam addon",
@@ -33,11 +33,10 @@
     },
     "disk_cache": {
       "categories": [ "disk-caching", "performance" ],
-      "type": "integer",
+      "type": "integer_input",
       "description": "Disable the disk cache to reduce browsing data on your pc",
-      "settings": {
-          "browser.cache.disk.capacity": 0
-      },
+      "setting": "browser.cache.disk.capacity"
+      "default": null,
       "warnings": [
         "This will slow down your browsing and increase the amount of transferred data.",
       ],
@@ -47,11 +46,10 @@
     },
     "useragent": {
       "categories": [ "tracking", "category3" ],
-      "type": "integer",
+      "type": "string_input",
       "description": "Change your useragent string. If you keep the field empty, no setting will be changed.",
-      "settings": {
-          "general.useragent.override": ""
-      },
+      "setting": "general.useragent.override",
+      "default": null
       "warnings": [
         "If you're faking a non-mozilla UA some sites may break, because they are sending content adapted to the wrong browser.",
       ],
@@ -62,11 +60,12 @@
     "healthreport": {
       "categories": [ "mozilla", "telemetry" ],
       "description": "Disable Telemetry",
-      "settings": {
+      "type": "checkbox",
+      "settings": [
           "datareporting.healthreport.uploadEnabled": false, 
           "datareporting.policy.dataSubmissionEnabled": false, 
           "datareporting.healthreport.service.enabled": false
-      },
+      ],
       "warnings": [],
       "references": [
         [ "https://someurl", "Documentation" ],
