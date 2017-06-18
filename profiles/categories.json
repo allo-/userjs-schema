@@ -1,0 +1,5 @@
+{
+    "data-leak": {"title": "Prevent data leaks", "settings": ["dom.event.clipboardevents.enabled", ]},
+    "tracking": {"title": "Prevent tracking", "settings": ["network.http.referer.spoofSource", "general.useragent.override"]},
+    "disk": {"title": "Things which have something to do with persistent storage", "settings": ["browser.cache.disk.capacity"]}
+}
