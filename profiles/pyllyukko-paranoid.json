@@ -32,7 +32,7 @@
       ]
     },
     "browser.cache.disk.capacity": {
-      "categories": [ "disk-caching", "performance" ]
+      "categories": [ "disk-caching", "performance" ],
       "type": "integer",
       "description": "Disable the disk cache to reduce browsing data on your pc",
       "value_when_active": 0,
