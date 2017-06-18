@@ -58,6 +58,19 @@
       "references": [
         [ "https://someurl", "Documentation" ],
       ]
+    },
+    "healthreport": {
+      "categories": [ "mozilla", "telemetry" ],
+      "description": "Disable Telemetry",
+      "settings": [
+          "datareporting.healthreport.uploadEnabled": false, 
+          "datareporting.policy.dataSubmissionEnabled": false, 
+          "datareporting.healthreport.service.enabled": false
+      ]
+      "warnings": [],
+      "references": [
+        [ "https://someurl", "Documentation" ],
+      ]
     }
   },
 }
