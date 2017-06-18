@@ -12,7 +12,7 @@
         ],
       "references": [
         ("https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled",
-         'Mozilla Documentation for the clipboardevents setting")
+         "Mozilla Documentation for the clipboardevents setting")
         ]
     },
     "network.http.referer.spoofSource": {
