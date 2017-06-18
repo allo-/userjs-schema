@@ -4,7 +4,7 @@
       "categories": [ "html5-api-dom", "data-leak" ],
       "type": "boolean",
       "description": "Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript",
-      "value_when_active": "false",
+      "value_when_active": false,
       "warnings": [
         "Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)"
       ],
@@ -16,7 +16,7 @@
       "categories": [ "http", "tracking" ],
       "type": "boolean",
       "description": "Send a referer header with the target URI as the source",
-      "value_when_active": "true",
+      "value_when_active": true,
       "warnings": [
         "Spoofing referers breaks functionality on websites relying on authentic referer headers",
         "Spoofing referers breaks visualisation of 3rd-party sites on the Lightbeam addon",
