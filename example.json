@@ -30,7 +30,7 @@
         [ "https://github.com/pyllyukko/user.js/issues/227", "Project Issue on Github" ]
       ]
     },
-    "disk_cache": {
+    "browser.cache.disk.capacity": {
       "category": "Disk",
       "type": "integer",
       "description": "Disable the disk cache to reduce browsing data on your pc",
@@ -43,7 +43,7 @@
         [ "https://someurl", "Documentation" ],
       ]
     },
-    "useragent": {
+    "general.useragent.override": {
       "category": "Identification",
       "type": "integer",
       "description": "Change your useragent string",
