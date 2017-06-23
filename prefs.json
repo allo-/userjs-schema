@@ -1,6 +1,6 @@
 {
   "prefs": {
-    EXAMPLE": {
+    "EXAMPLE": {
       "categories": [ "some", "category-ids", "as-strings" ],
       "type": "checkbox or string input",
       "default": "the default value of the interface option. Boolean for checkboxes, strings for text inputs (string settings)",
