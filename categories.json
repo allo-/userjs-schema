@@ -1,6 +1,27 @@
 {
-  "data-leak": { "title": "Prevent data leaks" },
-  "tracking": { "title": "Prevent tracking" },
-  "disk-caching": { "title": "Prevent persistent disk storage" },
-  "performance": { "title": "Settings that affect performance" },
+  "EXAMPLE": {
+    "title": "A short title, which can be used i.e. in a navigation bar",
+    "short_description": "A one sentence description, which can be used in a tooltip",
+    "description": "A long description, which can be used as help text"
+  }
+  "data-leak": { 
+    "title": "Data Leaks",
+    "short_description": "Prevent data leaks",
+    "description": "Disable Features, which leak data from the browser"
+  },
+  "tracking": {
+    "title": "Tracking",
+    "short_description": "Prevent tracking",
+    "description": "Disable Features, which can be used by websites to identify your browser on the next visit"
+  },
+  "disk-caching": {
+    "title": "Storage",
+    "short_description": "Prevent persistent disk storage",
+    "description": "Disable features, which store persistent data on your hard drive. This prevents persons with access to your pc to see what sites you visited"
+  },
+  "performance": {
+    "title": "Performance",
+    "short_description": "Settings that affect performance",
+    "description": "Features, which have impact on the performance of your pc or firefox. Some of these features also may have impact on the stability"
+  },
 }
