@@ -3,6 +3,7 @@
     "clipboardevents": {
       "categories": [ "html5-api-dom", "data-leak" ],
       "type": "checkbox",
+      "default": true,
       "description": "Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript",
       "settings": {
           "dom.event.clipboardevents.enabled": false
@@ -17,6 +18,7 @@
     "referer_spoof_source": {
       "categories": [ "http", "tracking" ],
       "type": "checkbox",
+      "default": true,
       "description": "Send a referer header with the target URI as the source",
       "settings": {
           "network.http.referer.spoofSource": true
@@ -61,6 +63,7 @@
       "categories": [ "mozilla", "telemetry" ],
       "description": "Disable Telemetry",
       "type": "checkbox",
+      "default": true,
       "settings": {
           "datareporting.healthreport.uploadEnabled": false, 
           "datareporting.policy.dataSubmissionEnabled": false, 
