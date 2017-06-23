@@ -61,7 +61,7 @@
         "This will slow down your browsing and increase the amount of transferred data.",
       ],
       "references": {
-        "sampleurl" [ "https://someurl", "Documentation" ],
+        "sampleurl": [ "https://someurl", "Documentation" ],
       }
     },
     "useragent": {
