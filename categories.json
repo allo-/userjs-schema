@@ -3,7 +3,7 @@
     "title": "A short title, which can be used i.e. in a navigation bar",
     "short_description": "A one sentence description, which can be used in a tooltip",
     "description": "A long description, which can be used as help text"
-  }
+  },
   "data-leak": { 
     "title": "Data Leaks",
     "short_description": "Prevent data leaks",
