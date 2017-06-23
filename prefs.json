@@ -1,5 +1,23 @@
 {
   "prefs": {
+    EXAMPLE": {
+      "categories": [ "some", "category-ids", "as-strings" ],
+      "type": "checkbox or string input",
+      "default": "the default value of the interface option. Boolean for checkboxes, strings for text inputs (string settings)",
+      "description": "Disable clipboard event detection (onCut/onCopy/onPaste) via Javascript",
+      "settings": {
+          "the.about.config.setting.value": "value to set when checked"
+      },
+      "warnings": [
+        "text entries with warnings about broken features. May link references as (reference) or [reference title](reference id)",
+        "references are listed with [1] title where title is linked, or [2] url, if title was null.",
+        "the title in the reference list is the default for the (reference) syntax in warning/description strings"
+      ],
+      "references": {
+        "reference-id": [ "https://reference url", "reference title" ],
+        "reference-id2": [ "https://reference url", null ]
+      }
+    },
     "clipboardevents": {
       "categories": [ "html5-api-dom", "data-leak" ],
       "type": "checkbox",
@@ -11,15 +29,15 @@
       "warnings": [
         "Disabling clipboard events breaks Ctrl+C/X/V copy/cut/paste functionaility in JS-based web applications (Google Docs...)"
       ],
-      "references": [
-        [ "https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled", "Mozilla Documentation for the clipboardevents setting" ]
-      ]
+      "references": {
+        "mozdocs": [ "https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/dom.event.clipboardevents.enabled", "Mozilla Documentation for the clipboardevents setting" ]
+      }
     },
     "referer_spoof_source": {
       "categories": [ "http", "tracking" ],
       "type": "checkbox",
       "default": true,
-      "description": "Send a referer header with the target URI as the source",
+      "description": "Send a referer header with the target URI as the source. See the (bugzilla) or [pyllyukko's github issue](github) for more information.",
       "settings": {
           "network.http.referer.spoofSource": true
       },
@@ -28,10 +46,10 @@
         "Spoofing referers breaks visualisation of 3rd-party sites on the Lightbeam addon",
         "Spoofing referers disables CSRF protection on some login pages not implementing origin-header/cookie+token based CSRF protection"
       ],
-      "references": [
-        [ "https://bugzilla.mozilla.org/show_bug.cgi?id=822869", "Bugzilla Entry" ],
-        [ "https://github.com/pyllyukko/user.js/issues/227", "Project Issue on Github" ]
-      ]
+      "references": {
+        "bugzilla": [ "https://bugzilla.mozilla.org/show_bug.cgi?id=822869", "Bugzilla Entry" ],
+        "github": [ "https://github.com/pyllyukko/user.js/issues/227", "Project Issue on Github" ]
+      }
     },
     "disk_cache": {
       "categories": [ "disk-caching", "performance" ],
@@ -42,9 +60,9 @@
       "warnings": [
         "This will slow down your browsing and increase the amount of transferred data.",
       ],
-      "references": [
-        [ "https://someurl", "Documentation" ],
-      ]
+      "references": {
+        "sampleurl" [ "https://someurl", "Documentation" ],
+      }
     },
     "useragent": {
       "categories": [ "tracking", "category3" ],
@@ -55,9 +73,9 @@
       "warnings": [
         "If you're faking a non-mozilla UA some sites may break, because they are sending content adapted to the wrong browser.",
       ],
-      "references": [
-        [ "https://someurl", "Documentation" ],
-      ]
+      "references": {
+        "sampleurl": [ "https://someurl", "Documentation" ],
+      }
     },
     "healthreport": {
       "categories": [ "mozilla", "telemetry" ],
@@ -70,9 +88,9 @@
           "datareporting.healthreport.service.enabled": false
       },
       "warnings": [],
-      "references": [
-        [ "https://someurl", "Documentation" ],
-      ]
+      "references": {
+        "sampleurl": [ "https://someurl", "Documentation" ],
+      }
     }
   },
 }
